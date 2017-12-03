@@ -9,17 +9,9 @@ for x in range(((len(input)//2)), len(input)):
 for x in range(0, (len(input)//2)):
     check += input[x]
 
-print (len(input))
-print (len(check))
-
 sum = 0
 
-while True:
+for x in range(len(input)):
     if input[x] == check[x]:
         sum += int(input[x])
-    x += 1
-    if x == len(input):
-        break
-print (input)
-print (check)
 print (sum)
